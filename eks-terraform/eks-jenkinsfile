@@ -1,5 +1,9 @@
 pipeline {
     agent any
+     environment {
+        AWS_ACCESS_KEY_ID     = "AKIAXNGUVGVBEFZ2UZ5K"
+        AWS_SECRET_ACCESS_KEY = "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"
+    }
     parameters {
         string(name: 'ACTION', defaultValue: 'apply', description: 'Terraform action: apply or destroy')    
     }
