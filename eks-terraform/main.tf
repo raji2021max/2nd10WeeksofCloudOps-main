@@ -36,7 +36,7 @@ provider "aws" {
   }
 
   resource "aws_iam_role" "worker" {
-    name = "veera-eks-worker1"
+    name = "veera-eks-worker"
 
     assume_role_policy = jsonencode({
       "Version": "2012-10-17",
@@ -53,7 +53,7 @@ provider "aws" {
   }
 
   resource "aws_iam_policy" "autoscaler" {
-    name = "veera-eks-autoscaler-policy1"
+    name = "veera-eks-autoscaler-policy"
     policy = jsonencode({
       "Version": "2012-10-17",
       "Statement": [
