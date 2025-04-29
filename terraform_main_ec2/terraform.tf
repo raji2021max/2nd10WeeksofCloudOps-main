@@ -5,12 +5,11 @@ terraform {
         version = ">= 5.25.0"
     }
   }
-
-  backend "s3" {
-    bucket = "nareshawsdevvvv"
-    key    = "ec2/terraform.tfstate"
-    region = "us-east-1"
-  }
+  # backend "s3" {
+  #   bucket = "devdevtesttest1"
+  #   key    = "ec2/terraform.tfstate"
+  #   region = "us-east-1"
+  # }
 
   required_version = ">= 1.6.3"
 }
