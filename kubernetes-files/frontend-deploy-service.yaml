@@ -21,7 +21,7 @@ spec:
         - containerPort: 80
         env:   # <-- Fixed indentation
         - name: REACT_APP_API_BASE_URL
-          value: "http//a269bf295f6a94d028d9302570f6c4d4-1053877301.us-east-1.elb.amazonaws.com"
+          value: www.raji.shop
               
 
 
